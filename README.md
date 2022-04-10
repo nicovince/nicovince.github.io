@@ -28,7 +28,7 @@ pre-commit install --hook-type pre-commit --hook-type commit-msg
 ```
 
 ## Fix this page
-Clone website repository:
+Clone website [repository](https://github.com/nicovince/nicovince.github.io):
 ```
 git clone https://nicovince@github.com/nicovince/nicovince.github.io.git
 cd nicovince.github.io

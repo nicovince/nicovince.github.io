@@ -1,1 +1,9 @@
 theme: jekyll-theme-slate
+title: Dev Zone
+author: Nicolas VINCENT
+
+social-network-links:
+  github: nicovince
+
+share-links-active:
+  github: true
