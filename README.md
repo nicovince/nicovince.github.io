@@ -4,7 +4,7 @@
 Install various packages and download configurations repositories:
 
 ```
-apt-get update && apt-get install -y vim git python3-pip python3-dbus
+sudo apt-get update && sudo apt-get install -y vim git python3-pip python3-dbus
 pip install pre-commit
 pip install ruamel.yaml
 
