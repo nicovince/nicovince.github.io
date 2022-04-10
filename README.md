@@ -1,4 +1,5 @@
-# First time setup
+# Development zone
+## First time setup
 
 Install various packages and download configurations repositories:
 
@@ -11,7 +12,7 @@ git clone https://nicovince@github.com/nicovince/bin.git $HOME/bin
 cd $HOME/bin
 pre-commit install --hook-type pre-commit --hook-type commit-msg
 
-git clone --recurse-submodules https://github.com/nicovince/vimrc.git $HOME/.vim
+git clone --recurse-submodules https://nicovince@github.com/nicovince/vimrc.git $HOME/.vim
 echo 'source $HOME/.vim/vimrc.vim' > $HOME/.vimrc
 cd $HOME/.vim
 # Install hooks
@@ -25,3 +26,11 @@ cd $HOME/.dotfiles
 pre-commit install --hook-type pre-commit --hook-type commit-msg
 ./init_config.sh
 ```
+
+## Fix this page
+Clone website repository:
+```
+git clone https://nicovince@github.com/nicovince/nicovince.github.io.git
+cd nicovince.github.io
+```
+Edit, commit and push.
