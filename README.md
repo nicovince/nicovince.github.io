@@ -7,6 +7,23 @@ Install various packages and download configurations repositories:
 sudo apt-get update && sudo apt-get install -y vim git python3-pip python3-dbus
 pip install pre-commit
 pip install ruamel.yaml
+pip install virtualenvwrapper
+
+sudo bash -c 'cat <<EOF >/etc/bash_completion.d/virtualenvwrapper
+# Enable virtual env
+USE_FULL=no
+INSTALL_DIR="/usr/local/bin/"
+if [ "\$USE_FULL" = "yes" ]; then
+    if [ -f \${INSTALL_DIR}/virtualenvwrapper.sh ]; then
+   . \${INSTALL_DIR}/virtualenvwrapper.sh
+    fi
+else
+    if [ -f \${INSTALL_DIR}/virtualenvwrapper_lazy.sh ]; then
+   . \${INSTALL_DIR}/virtualenvwrapper_lazy.sh
+    fi
+fi
+EOF
+'
 
 git clone https://nicovince@github.com/nicovince/bin.git $HOME/bin
 cd $HOME/bin
