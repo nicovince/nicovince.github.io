@@ -4,8 +4,7 @@
 Install various packages and download configurations repositories:
 
 ```
-sudo apt-get update && sudo apt-get install -y vim git python3-pip python3-dbus
-pip install pre-commit
+sudo apt-get update && sudo apt-get install -y vim git python3-pip python3-dbus jq pre-commit
 pip install ruamel.yaml
 pip install virtualenvwrapper
 
