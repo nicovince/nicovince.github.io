@@ -22,6 +22,11 @@ pre-commit install --hook-type pre-commit --hook-type commit-msg
 # Install plugins documentations
 find pack -name "doc" -exec vim -u NONE -c "helptags {}" -c q \;
 
+# Install nvim config
+mkdir -p $HOME/.config
+git clone --recurse-submodules https://nicovince@github.com/nicovince/nvim.git $HOME/.config/nvim
+
+# Install various configuration files
 git clone https://nicovince@github.com/nicovince/dotfiles.git ${HOME}/.dotfiles
 cd $HOME/.dotfiles
 pre-commit install --hook-type pre-commit --hook-type commit-msg
